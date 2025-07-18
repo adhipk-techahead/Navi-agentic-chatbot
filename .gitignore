@@ -1,0 +1,46 @@
+# Byte-compiled / optimized / compiled files
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+
+# Virtual environment
+.venv/
+env/
+venv/
+*.egg-info/
+
+# Editor-specific files
+.vscode/ # VS Code settings
+.idea/   # PyCharm settings
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific files
+.DS_Store
+.Trashes
+Thumbs.db
+ehthumbs.db
+
+# Database files (if using SQLite or similar local databases)
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment variables and secrets
+.env
+.flaskenv
+secrets.py
+config.ini # Or any other config file with sensitive data
+
+# Logs
+*.log
+
+# Test artifacts
+.pytest_cache/
+htmlcov/
+.coverage
+
+# Build artifacts
+dist/
+build/
