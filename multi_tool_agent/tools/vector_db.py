@@ -1,25 +1,39 @@
-def query_vector_db(video_id: str, user_preferences: dict) -> dict:
+video_id = "1234567890"
+def get_video_id() -> str:
+    """Mock: Returns the video ID."""
+    return f"youtube.com/watch?v={video_id}"
+
+def get_video_claims(v) -> dict:
     """Mock: Queries vectorDB for validated medical claims and citations for a video/article."""
     # Mock response with validated claims and citations
     return {
         "video_id": video_id,
         "claims": [
             {
-                "id": "claim_001",
                 "text": "Regular exercise reduces cardiovascular disease risk by 30%",
                 "citation": "American Heart Association, 2023",
                 "confidence": 0.95
             },
-            {
-                "id": "claim_002", 
+            { 
                 "text": "Mediterranean diet improves heart health and longevity",
                 "citation": "Journal of Cardiology, 2022",
                 "confidence": 0.92
             },
             {
-                "id": "claim_003",
                 "text": "Stress management techniques lower blood pressure",
                 "citation": "WHO Guidelines, 2023",
+                "confidence": 0.88
+            },{
+                "text": "Alcohol is the solution to all your problems",
+                "citation": "Budweiser ad, 2022",
+                "confidence": -1
+            },{
+                "text": "Apple a day keeps the doctor away",
+                "citation": "big fruit, 2022",
+                "confidence": -0.75
+            },{
+                "text": "Exercise is the best way to improve your health",
+                "citation": "Journal of Exercise, 2022",
                 "confidence": 0.88
             }
         ],

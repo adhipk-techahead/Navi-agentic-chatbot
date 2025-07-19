@@ -7,7 +7,6 @@ You can use this to set the user ID from your authentication system.
 
 from multi_tool_agent.tools.session_management import (
     set_current_user_id, 
-    get_current_user_id, 
     get_session_info,
     is_using_default_user,
     clear_session
